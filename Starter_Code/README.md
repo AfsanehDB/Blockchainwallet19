@@ -201,11 +201,11 @@
 # Calculate total `wage` for the candidate by multiplying the candidate’s hourly
 # rate from the candidate database (`candidate_database[person][3]`) by the
 # value of the `hours` variable
-wage = candidate_database[person][3] * hours
+
 
 # @TODO
 # Write the `wage` calculation to the Streamlit sidebar
-st.sidebar.write(wage)
+
 
 ##########################################
 # Step 2 - Part 2:
@@ -226,7 +226,7 @@ st.sidebar.write(wage)
 # web interface.
 
 
-if st.sidebar.button("Send Transaction"):
+
 
     # @TODO
     # Call the `send_transaction` function and pass it 3 parameters:
@@ -235,17 +235,17 @@ if st.sidebar.button("Send Transaction"):
     transaction_hash = send_transaction(account, candidate_address, wage)
 
     # Markdown for the transaction hash
-    st.sidebar.markdown("#### Validated Transaction Hash")
+  
 
     # Write the returned transaction hash to the screen
-    st.sidebar.write(transaction_hash)
+    
 
     # Celebrate your successful payment
-    st.balloons()
+    
 
 # The function that starts the Streamlit application
 # Writes FinTech Finder candidates to the Streamlit page
-get_people(w3)
+
 
 ################################################################################
 # Step 3: Inspect the Transaction
@@ -283,3 +283,9 @@ get_people(w3)
     # Save this screenshot to the README.md file of your GitHub repository for
     #  this Challenge assignment.
 
+![candidate one ](".\Screenshot\Screenshot 2023-06-30 175215.png")
+![wage one](".\Screenshot\Screenshot 2023-06-30 175244.png")
+![Ganache1](".\Screenshot\Screenshot 2023-06-30 175342.png")
+![candidate two](".\Screenshot\Screenshot 2023-06-30 175440.png")    
+![wage two](".\Screenshot\Screenshot 2023-06-30 175518.png)
+![Ganache2](".\Screenshot\Screenshot 2023-06-30 175902.png")
